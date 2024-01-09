@@ -8,14 +8,14 @@ class Game{
      public int noOfGuesses = 0;
 
      public Game(){
-         Random rand = new Random();
-         this.number = rand.nextInt(100);
+         Random rand = new Random();   // rand object is created for Random() class
+         this.number = rand.nextInt(100); // guessed the random number b/w 1 to 100
      }
 
      public void takeUserinput(){
          System.out.println("Guess the number");
          Scanner sc = new Scanner(System.in);
-         inputNumber = sc.nextInt();
+         inputNumber = sc.nextInt();  // input number to be taken as input from console
      }
 
      public boolean isCorrectNumber(){
@@ -58,7 +58,7 @@ public class cwh_43_exercise3 {
            Use properties such as noOfGuesses(int), etc to get this task done!
         */
 
-         Game g = new Game();
+         Game g = new Game(); // g object of Game class has been created;
          boolean b = false;
 
          while(b != true){
